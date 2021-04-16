@@ -1,0 +1,114 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+}
+
+.container {
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.card {
+    transform-style: preserve-3d;
+    min-height: 80vh;
+    width: 35rem;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2), 0px 0px 50px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    padding: 0rem 5rem;
+}
+
+.gungnir {
+    min-height: 35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gungnir img {
+    width: 20rem;
+    z-index: 2;
+    transition: all 0.75s ease-out;
+}
+
+.circle {
+    width: 14rem;
+    height: 14rem;
+    background: linear-gradient(to right,
+            white,
+            #4169E1,
+            #0000FF,
+            #4169E1,
+            white);
+    position: absolute;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 1.5rem;
+    transition: all 0.75s ease-out;
+}
+
+.info h3 {
+    font-size: 1.3rem;
+    padding: 2rem 0rem;
+    color: #0000FF;
+    font-weight: lighter;
+    transition: all 0.75s ease-out;
+}
+
+.pattern {
+    display: flex;
+    justify-content: space-between;
+    transition: all 0.75s ease-out;
+}
+
+.pattern button {
+    padding: 1rem 1rem;
+    background: none;
+    border: none;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: bold;
+    color: #4169E1;
+}
+
+.pattern button:hover {
+    background-color: #4169E1;
+    color: white;
+}
+
+.compra {
+    margin: 2.5rem;
+    transition: all 0.75s ease-out;
+}
+
+.compra button {
+    width: 100%;
+    padding: 1rem 0rem;
+    background-color: #4169E1;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    font-weight: bolder;
+    transition: all 0.75s ease-out;
+}
+
+.compra button:hover {
+    background-color: #0000FF;
+    color: white;
+}
